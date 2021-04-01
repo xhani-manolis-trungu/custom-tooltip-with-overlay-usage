@@ -1,0 +1,17 @@
+<button mat-raised-button        
+        aria-label="Button that displays a tooltip when focused or hovered over"
+        customToolTip [contentTemplate]="template">
+  Action
+</button>
+
+<ng-template #template>
+    <div style="display: flex; flex-direction: column">
+     <span>tooltip text</span>
+     <span>tootlip description</span>
+    </div>
+  </ng-template>
+
+
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
